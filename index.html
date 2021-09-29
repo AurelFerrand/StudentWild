@@ -10,17 +10,69 @@
 </head>
 
 <body>
-    <header></header>
-    <container>
-        <div class="container">
-            <div class="JavaScript"></div>
-            <div class="Git"></div>
-            <div class="Unix"></div>
-            <div class="Css"></div>
-        </div>
 
-    </container>
+    <nav>
+        <img src="https://i.ibb.co/8zr7tpg/Sans-titre.png" alt="StudentWild.png" border="0">
+
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+
+    </nav>
+
+
+    <header></header>
+
+
+    <!--Script javaScript pour les redirections des grids "onClick" goto renvoi la direction-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".onClick").click(function (e) {
+                window.location = $(this).attr('goto');
+            });
+        });
+    </script>
+
+    <section class="products">
+        <!--Section et class "Products" qui englobe toutes les grids-->
+
+        <article class="onClick" goto="">
+            <h1></h1>
+        </article>
+
+        <article class="onClick" goto="">
+            <h1></h1>
+        </article>
+
+        <article class="onClick" goto="">
+            <h1></h1>
+        </article>
+
+        <article class="onClick" goto="">
+            <!--onClick est la class pour l'apelle JavaScript ==> redirection des futurs Pages-->
+            <h1></h1>
+        </article>
+
+        <article class="onClick" goto="">
+            <h1></h1>
+        </article>
+
+        <article class="onClick" goto="">
+            <h1></h1>
+        </article>
+
+        <article class="onClick" goto="">
+            <h1></h1>
+        </article>
+
+        <!--article est une grid-->
+
+    </section>
+
     <footer></footer>
+
 </body>
 
 </html>
