@@ -14,9 +14,8 @@
         <img src="https://i.ibb.co/8zr7tpg/Sans-titre.png" alt="StudentWild.png" border="0">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="">Html/Css</a></li>
-            <li><a href="">Javascript</a></li>
-            <li><a href="">Git</a></li>
+            <li><a href="htmlcss.html">Html/Css</a></li>
+            <li><a href="js.html">Javascript</a></li>
             <li><a href="">Unix</a></li>
             <li><a href="">Node</a></li>
             <li><a href="">Contact</a></li>
@@ -35,8 +34,8 @@
             Tu devras également suivre les différentes modifications apportées à ton code.
             Ici, nous allons parler de git, de GitHub et de la façon dont tu peux utiliser ces 2 services
             pour collaborer et conserver un historique de tes projets.</p>
-        <iframe width="60%" height="315" src="https://www.youtube.com/embed/rP3T0Ee6pLU" title="YouTube video player"
-            frameborder="0"
+        <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/rP3T0Ee6pLU"
+            title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         <article>
@@ -51,8 +50,8 @@
             version). Le principal intérêt pour les développeurs est de pouvoir revenir à une version antérieure en cas
             d’erreur ou de perte d’une partie du code source, mais aussi de pouvoir optimiser la gestion de projet et de
             limiter les erreurs dès lors que plusieurs personnes travaillent sur le même code source.</p>
-        <iframe width="60%" height="315" src="https://www.youtube.com/embed/9GKpbI1siow" title="YouTube video player"
-            frameborder="0"
+        <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/9GKpbI1siow"
+            title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         <article>
@@ -70,16 +69,16 @@
         dans un futur proche, avec toi en tant que développeur, GitHub (ou l'une de ses alternatives) sera un outil
         indispensable, ne serait-ce que pour montrer tes projets aux recruteurs.
         ​</p>
-        <iframe width="60%" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E" title="YouTube video player"
-            frameborder="0"
+        <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E"
+            title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         <article>
             <h1>Premiers pas avec GitHub</h1>
         </article>
         <p>Suis cette super vidéo pour apprendre à créer un dépôt et à démarrer avec GitHub!</p>
-        <iframe width="60%" height="315" src="https://www.youtube.com/embed/BCQHnlnPusY" title="YouTube video player"
-            frameborder="0"
+        <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/BCQHnlnPusY"
+            title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
 
@@ -126,31 +125,47 @@
             découvrirons plus tard) ;<br><br>
             • Facilite le contrôle du code produit par chaque développeur, ce qui assure la qualité du projet (ceci est
             fait par l'utilisation de pull requests que nous verrons plus tard également).<br><br>
-            Dans cette quête, nous découvrirons progressivement le flow GitHub qui te servira dans tes futurs projets.<br><br>
-            Pour ce faire, tu découvriras d'abord le flow à suivre sur GitHub, uniquement via son interface graphique.<br><br>
+            Dans cette quête, nous découvrirons progressivement le flow GitHub qui te servira dans tes futurs
+            projets.<br><br>
+            Pour ce faire, tu découvriras d'abord le flow à suivre sur GitHub, uniquement via son interface
+            graphique.<br><br>
             Ensuite, tu verras comment effectuer certaines des mêmes opérations (création de branches) via Git, sur des
             lignes de commande sur ta machine.<br><br>
             Enfin, tu suivras à nouveau le flow de GitHub, mais cette fois en utilisant ce que tu as appris sur Git.</p>
-        <img src="https://cdn.thenewstack.io/media/2018/05/e49988cf-tree-3369950_640.jpg" alt="photo arbre">
+        <img class="img-000" src="https://cdn.thenewstack.io/media/2018/05/e49988cf-tree-3369950_640.jpg"
+            alt="photo arbre">
         <article>
             <h1>Git : la création de branches locales</h1>
         </article>
         <p>Tu viens d'apprendre à utiliser l'interface graphique de GitHub.<br>
-            Cette nouvelle branche te permet de modifier un fichier directement dans ton navigateur, puis de le fusionner avec ton code de base pour le partager avec le reste de ton équipe.<br>
-            Mais comme tu le sais déjà, modifier du code en utilisant uniquement l'interface GitHub, c'est-à-dire faire tout dans ton navigateur, n'est pas très pratique : il est plus pratique de travailler localement (= sur ton ordinateur), dans un éditeur de texte, pour enregistrer tes modifications en utilisant Git (rappeles-toi tes amis git add et git commit), et seulement ensuite de les pousser vers ton repo GitHub.<br>
-            Cela tombe bien : il est justement possible de créer une branche locale pour effectuer des commits sur celle-ci, puis de pousser cette branche vers un repo GitHub (l'interface graphique de GitHub prend alors le relais selon le flow que tu connais déjà à l'étape de pull request).<br>Mais tout d'abord, apprends à créer une branche via Git en regardant cette vidéo (de 0 à 5 minutes 30).
+            Cette nouvelle branche te permet de modifier un fichier directement dans ton navigateur, puis de le
+            fusionner avec ton code de base pour le partager avec le reste de ton équipe.<br>
+            Mais comme tu le sais déjà, modifier du code en utilisant uniquement l'interface GitHub, c'est-à-dire faire
+            tout dans ton navigateur, n'est pas très pratique : il est plus pratique de travailler localement (= sur ton
+            ordinateur), dans un éditeur de texte, pour enregistrer tes modifications en utilisant Git (rappeles-toi tes
+            amis git add et git commit), et seulement ensuite de les pousser vers ton repo GitHub.<br>
+            Cela tombe bien : il est justement possible de créer une branche locale pour effectuer des commits sur
+            celle-ci, puis de pousser cette branche vers un repo GitHub (l'interface graphique de GitHub prend alors le
+            relais selon le flow que tu connais déjà à l'étape de pull request).<br>Mais tout d'abord, apprends à créer
+            une branche via Git en regardant cette vidéo (de 0 à 5 minutes 30).
         </p>
-        <iframe width="60%" height="315" src="https://www.youtube.com/embed/sgzkY5vFKQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/sgzkY5vFKQQ"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         <article>
             <h1>Maintenant entraine toi!</h1>
         </article>
         <p> et reviens la semaine prochaine pour plus d'information. Voici quelques liens pour t'entrainer:
-            <ul>
-                <li><a href="https://www.pierre-giraud.com/git-github-apprendre-cours/presentation-git-github/">Presentation git github</a></li>
-                <li><a href="https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github?archived-source=1233741">Cours openclassroom</a></li>
-                <li><a href="http://rogerdudler.github.io/git-guide/index.fr.html">Petit guide</a></li>
-                <li><a href="https://git-scm.com/docs">documentation Git</a></li>
-            </ul>
+        <ul>
+            <li><a href="https://www.pierre-giraud.com/git-github-apprendre-cours/presentation-git-github/">Presentation
+                    git github</a></li>
+            <li><a
+                    href="https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github?archived-source=1233741">Cours
+                    openclassroom</a></li>
+            <li><a href="http://rogerdudler.github.io/git-guide/index.fr.html">Petit guide</a></li>
+            <li><a href="https://git-scm.com/docs">documentation Git</a></li>
+        </ul>
         </p>
 
     </section>
@@ -158,12 +173,16 @@
     <footer class="container">
         <div class="row">
             <div class="col-md-12">
-                <a href="http://www.facebook.com" target="_blank" class="btn-social btn-facebook"><i
-                        class="fa fa-facebook"></i></a>
-                <a href="https://www.paypal.com" target="_blank" class="btn-social btn-paypal"><i
-                        class="fa fa-paypal"></i></a>
-                <a href="https://twitter.com" target="_blank" class="btn-social btn-twitter"><i
-                        class="fa fa-twitter"></i></a>
+                <h1 class=lien-social>Facebook :<a href="https://www.facebook.com/WildCodeSchool/" target="_blank"
+                        class="btn-social btn-facebook">
+                        <i class="fa fa-facebook"></i></a></h1>
+
+                <h1 class=lien-social>Paypal :<a
+                        href="http://4.bp.blogspot.com/-O4AtSQGggXY/UopQFTT9kpI/AAAAAAAAEn4/DJ6000EjRV4/s1600/SuperTroll-flying-through-clouds-trollface-troll-face.gif"
+                        target="_blank" class="btn-social btn-paypal"><i class="fa fa-paypal"></i></a></h1>
+
+                <h1 class=lien-social>Twitter :<a href="https://twitter.com/WildCodeSchool" target="_blank"
+                        class="btn-social btn-twitter"><i class="fa fa-twitter"></i></a></h1>
             </div>
         </div>
     </footer>
