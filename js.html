@@ -24,7 +24,7 @@
 
     <!--<div><img src= "https://i.ibb.co/nnkKmGP/imgbin-javascript-logo-html-com1ment-blog-png.png" alt = "logo js" id="logojs"> </div>
     -->
-    <section class="grid-js">
+    <section class="grid-html">
         <!--Section et class "Products" qui englobe toutes les grids-->
 
         <article>
@@ -49,6 +49,10 @@
             plus
             populaire. Ce changement de nom servait les intérêts des deux sociétés.
 
+            <img class="img-000"
+                src="https://ninyachristina.files.wordpress.com/2016/03/brendan-braziljs-2012.jpg?w=500&h=216"
+                alt="Brendan Eich">
+
             En décembre 1995, Sun et Netscape annoncent la sortie de JavaScript. En mars 1996, Netscape met en œuvre
             le moteur JavaScript dans son navigateur web Netscape Navigator 2.0. Le succès de ce navigateur contribue à
             l'adoption rapide de JavaScript dans le développement web orienté client. Microsoft réagit alors en
@@ -60,10 +64,11 @@
             confusion entre les deux langages, proches syntaxiquement mais pas du tout dans leurs concepts fondamentaux,
             et qui perdure encore de nos jours.
 
-            « JavaScript » devient une marque déposée par Oracle aux États-Unis en mai 1997.</p>
+            « JavaScript » devient une marque déposée par Oracle aux États-Unis en mai 1997.
+        </p>
         <!--article est une grid-->
         <article>
-            <h1>Utilité de JavaScript</h1>
+            <h1 id="titre_gauche">Utilité de JavaScript</h1>
         </article>
         <p>Le langage JavaScript est utilisé dans le domaine des pages web pour travailler l’ergonomie et
             l’interactivité des pages. Il ajoute un plus grand dynamisme et participe à une meilleure expérience
@@ -76,32 +81,64 @@
             revanche, d’autres peuvent s’en passer, comme le cas de la page de recherche de Google.
             <br> Le code JavaScript permet entre autres :
 
+
             De faire apparaitre, de déplacer ou de supprimer des éléments sur la page
             De mettre en place des animations plus complexes 2D/3D
             De mettre à jour les éléments sans que l’internaute ait besoin de recharger la page
             De faire réagir la page web en fonction du comportement de l’utilisateur
             De contrôler les médias, les vidéos, les images
             Sans le langage JavaScript, une page web reste statique et peu animée (malgré la présence de CSS).
+
+            <img class="img-000"
+                src="https://i0.wp.com/quartierdudigital.fr/wp-content/uploads/2016/06/Sans-titre-1.png"
+                alt="Ilustration du Javascript">
         </p>
         <!--article est une grid-->
         <article>
-            <h2>Boucles et itérations</h2>
+            <h1 id="titre_gauche">Boucles et itérations</h1>
         </article>
 
-        <p>Les boucles permettent de répéter des actions simplement et rapidement. Ce chapitre du guide JavaScript
-            présente les différentes instructions qu'il est possible d'utiliser en JavaScript pour effectuer des
-            itérations.
-
-            Les boucles permettent de répéter des actions simplement et rapidement. Une boucle peut être vue comme une
+        <p> Les boucles permettent de répéter des actions simplement et rapidement. Une boucle peut être vue comme une
             version informatique de « copier N lignes » ou de « faire X fois quelque chose ». Par exemple, en
-            JavaScript, on pourrait traduire « Tourne 5 fois » avec cette boucle :</p>
-            
-            <div id="tableau">
-            <pre> <br> for(let i = 0; i < 5; i++){<tr>
+            JavaScript, on pourrait traduire « Tourne 5 fois » avec cette boucle : </p>
+
+
+        <pre alt="Boucle For"> <br> for(let i = 0; i < 5; i++){<tr>
                 console.log("Turn number " + i)
             }</pre>
-        </div>
-    </section>
+
+        <p> L'instruction do...while permet de répéter un ensemble d'instructions jusqu'à ce qu'une condition donnée ne
+            soit
+            plus vérifiée. (NdT : littéralement « do...while » signifie « faire... tant que »). Une instruction
+            do...while Dans l'exemple qui suit, la boucle do est exécutée au moins une fois et répétée jusqu'à ce que i
+            ne soit plus inférieur à 5.
+        </p>
+
+        <pre alt="Boucle Do While">
+            <br> let i = 0;
+            do {
+              i += 1;
+              console.log(i);
+            } while (i < 5);</pre>
+
+        <article>
+            <h2>Fonction()</h2>
+        </article>
+        <p>Les fonctions font partie des briques fondamentales de JavaScript. Une fonction est une procédure JavaScript,
+            un ensemble d'instructions effectuant une tâche ou calculant une valeur. Afin d'utiliser une fonction, il
+            est nécessaire de l'avoir auparavant définie au sein de la portée dans laquelle on souhaite l'appeler. <br>
+            Les fonctions permettent de stocker en mémoire une certaine logique que l'on pourra utiliser à plusieurs
+            reprises dans la suite de notre code. Elles prennent en général des paramètres et retournent un résultat
+            particulier. Exemple : </p>
+
+            <pre alt="Fonction">
+                <br> function saluer (nom) {
+                    return "Salut " + nom
+                }
+                // On appelle ensuite notre fonction avec 
+                saluer('Marc') // Salut Marc</pre>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pggJ5s6sTpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    </section>
 
     <footer class="container">
         <div class="row">
@@ -109,11 +146,11 @@
                 <h1 class=lien-social>Facebook :<a href="https://www.facebook.com/WildCodeSchool/" target="_blank"
                         class="btn-social btn-facebook">
                         <i class="fa fa-facebook"></i></a></h1>
-
+    
                 <h1 class=lien-social>Paypal :<a
                         href="http://4.bp.blogspot.com/-O4AtSQGggXY/UopQFTT9kpI/AAAAAAAAEn4/DJ6000EjRV4/s1600/SuperTroll-flying-through-clouds-trollface-troll-face.gif"
                         target="_blank" class="btn-social btn-paypal"><i class="fa fa-paypal"></i></a></h1>
-
+    
                 <h1 class=lien-social>Twitter :<a href="https://twitter.com/WildCodeSchool" target="_blank"
                         class="btn-social btn-twitter"><i class="fa fa-twitter"></i></a></h1>
             </div>

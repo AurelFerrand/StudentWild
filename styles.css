@@ -166,39 +166,6 @@ section.products>article:nth-child(0n+7) {
     height: 8rem;
 }
 
-/* partie JS*/
-
-section.grid-js {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: .5rem;
-    background-color: rgb(255, 255, 255);
-}
-
-section.grid-js>article {
-    border-radius: 25px;
-    padding: .5rem;
-    border: 6px solid rgb(109, 105, 109);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: rgb(255, 255, 255);
-    filter: drop-shadow(2px 2rem 5px rgba(184, 181, 181, 0.4));
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-section.grid-js>article:first-child {
-    grid-column: 1;
-    /*First-Child JavaScript de la grid 1 sur 1 / 3*/
-    grid-row: 1;
-    height: 2rem;
-    margin-top: 3rem;
-    /* Taille de la grid qui de part sa taille prend 2/3 dans la colonne */
-    background-image: url(https://i.ibb.co/nnkKmGP/imgbin-javascript-logo-html-com1ment-blog-png.png);
-}
-
 /* partie html/Css */
 
 section.grid-html {
@@ -220,21 +187,19 @@ section.grid-html>article {
     filter: drop-shadow(2px 2rem 5px rgba(184, 181, 181, 0.4));
     margin-bottom: 3rem;
     text-align: center;
-
 }
 
-section.grid-html>article:first-child{
+section.grid-html>article:first-child {
     grid-column: 1;
     /*First-Child html de la grid 1 sur 1 / 3*/
     grid-row: 1;
     height: 4rem;
     /* Taille de la grid qui de part sa taille prend 2/3 dans la colonne */
-    background-image: url(https://outil-webmaster.fr/wp-content/uploads/2018/06/html-css.png);
 }
 
 #titre_gauche {
     text-align: center;
-   margin-top: initial;
+    margin-top: initial;
     font-size: 1.5rem;
     font-family: monospace;
 }
@@ -242,19 +207,17 @@ section.grid-html>article:first-child{
 .container {
     margin-top: 4rem;
 }
-.img-000{
 
+.img-000 {
     border-radius: 10rem;
     border-style: double;
-    
-    }
-    
-    .youtube{
-    
-        border-top-left-radius: 5rem;
-        border-top-right-radius: 5rem;
-        
-    }
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.youtube {
+    justify-content: center;
+}
 
 section.grid-js>article:nth-child(0n+0) {
     grid-column: 1;
@@ -330,13 +293,13 @@ section.grid-js>article:nth-child(0n+0) {
     background-color: #83c3f3;
 }
 
-
-pre{
+pre {
     background-color: rgb(29, 29, 29);
     color: white;
     width: 29rem;
-    height: 30rem;
+    height: 8rem;
     font-size: 1rem;
-    
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
-
