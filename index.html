@@ -12,14 +12,37 @@
 <body>
     <!-- barre de navigation -->
     <nav>
-        <img src="https://i.ibb.co/8zr7tpg/Sans-titre.png" alt="StudentWild.png" border="0" class= "logo-student">
+        <img src="https://i.ibb.co/8zr7tpg/Sans-titre.png" alt="StudentWild.png" border="0" class="logo-student">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="">Contact</a></li>
         </ul>
     </nav>
 
-    <header></header>
+    <header>
+        
+        <div id="div_horloge"></div>
+
+    
+ 
+        <script type="text/javascript">
+        window.onload=function() {
+          horloge('div_horloge');
+        };
+         
+        function horloge(el) {
+          if(typeof el=="string") { el = document.getElementById(el); }
+          function actualiser() {
+            var date = new Date();
+            var str = date.getDate();
+            
+            str += '-'+(date.getMonth()+1)+'-'+date.getFullYear();
+                        el.innerHTML = 'Nous sommes le : ' + str;
+          }
+          actualiser();
+          setInterval(actualiser,1000);
+        }
+        </script></header>
 
     <!--Script javaScript pour les redirections des grids "onClick" goto renvoi la direction-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -31,6 +54,11 @@
         });
     </script>
 
+
+    <h1 class = titre-p>Apprendre à apprendre avec la Wild !</h1>
+
+    <p>Il faut comprendre le sens de ce que vous apprenez. <br> Trouver sa place : il faut évoluer dans un environnement de confiance et avoir une motivation. <br> Croire en ses capacités : il faut que vous croyiez un minimum en vous, raisonner en étapes peut vous y aider.</p>
+    <HR>
     <section class="products">
         <!--Section et class "Products" qui englobe toutes les grids-->
 
@@ -38,7 +66,7 @@
             <h1></h1>
         </article>
 
-        <article class="onClick" goto="">
+        <article class="onClick" goto="git.html">
             <h1></h1>
         </article>
 
@@ -67,12 +95,21 @@
 
     </section>
 
+    
+
+
+
     <footer class="container">
         <div class="row">
             <div class="col-md-12">
-                <a href="http://www.facebook.com" target="_blank" class="btn-social btn-facebook"><i class="fa fa-facebook"></i></a>
-                <a href="https://www.paypal.com" target="_blank" class="btn-social btn-paypal"><i class="fa fa-paypal"></i></a>  
-                <a href="https://twitter.com" target="_blank" class="btn-social btn-twitter"><i class="fa fa-twitter"></i></a>
+                <h1 class = lien-social>Facebook :<a href="https://www.facebook.com/WildCodeSchool/" target="_blank" class="btn-social btn-facebook">
+                    <i class="fa fa-facebook"></i></a></h1>
+
+                <h1 class = lien-social>Paypal :<a href="http://4.bp.blogspot.com/-O4AtSQGggXY/UopQFTT9kpI/AAAAAAAAEn4/DJ6000EjRV4/s1600/SuperTroll-flying-through-clouds-trollface-troll-face.gif"
+                    target="_blank" class="btn-social btn-paypal"><i class="fa fa-paypal"></i></a></h1>
+
+                <h1 class = lien-social>Twitter :<a href="https://twitter.com/WildCodeSchool" target="_blank" class="btn-social btn-twitter"><i
+                        class="fa fa-twitter"></i></a></h1>
             </div>
         </div>
     </footer>
