@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src= "index.js"></script>
 </head>
 
 <body>
-    <nav>
-        <img src="https://i.ibb.co/8zr7tpg/Sans-titre.png" alt="StudentWild.png" border="0">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="htmlcss.html">Html/Css</a></li>
-            <li><a href="js.html">Javascript</a></li>
-            <li><a href="">Unix</a></li>
-            <li><a href="">Node</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </nav>
+     
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
     <!--<div><img src= "https://i.ibb.co/nnkKmGP/imgbin-javascript-logo-html-com1ment-blog-png.png" alt = "logo js" id="logojs"> </div>
     -->
@@ -34,12 +34,14 @@
             Tu devras également suivre les différentes modifications apportées à ton code.
             Ici, nous allons parler de git, de GitHub et de la façon dont tu peux utiliser ces 2 services
             pour collaborer et conserver un historique de tes projets.</p>
+            <p align ="center">
         <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/rP3T0Ee6pLU"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
+        </p>
         <article>
-            <h1>Qu'est-ce que la gestion des versions?</h1>
+            <h1 id="titre_gauche">Qu'est-ce que la gestion des versions?</h1>
         </article>
         <p>GIT est un logiciel de gestion de version décentralisé. Il a été développé par Linus Torvalds et Junio Hamano
             en 2005, et a été spécialement créé et optimisé pour Linux. Ce logiciel est proposé gratuitement avec une
@@ -50,41 +52,48 @@
             version). Le principal intérêt pour les développeurs est de pouvoir revenir à une version antérieure en cas
             d’erreur ou de perte d’une partie du code source, mais aussi de pouvoir optimiser la gestion de projet et de
             limiter les erreurs dès lors que plusieurs personnes travaillent sur le même code source.</p>
-        <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/9GKpbI1siow"
+        
+        <p align ="center">    <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/9GKpbI1siow"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
+        </p>
         <article>
-            <h1>Qu'est-ce que GitHub?</h1>
+            <h1 id="titre_gauche">Qu'est-ce que GitHub?</h1>
         </article>
         <p>GitHub est une plateforme en ligne très populaire offrant de nombreux services aux développeurs.<br>
             Ses principales fonctionnalités sont:
-        <ul>
-            <li>L'<bold>hébergement</bold> de code</li>
-            <li>Le travail collaboratif entre les membres d'une équipe</li>
-            <li>La découverte de nouveaux projets (souvent open-source) et collaboration entre développeurs du monde
-                entier.</li>
-        </ul>
+        
+            L'<bold>hébergement</bold> de code
+            Le travail collaboratif entre les membres d'une équipe
+            La découverte de nouveaux projets (souvent open-source) et collaboration entre développeurs du monde
+                entier.
+        
         GitHub n'est pas unique - il a des concurrents tels que GitLab, Bitbucket, etc. Néanmoins, une chose est sûre:
         dans un futur proche, avec toi en tant que développeur, GitHub (ou l'une de ses alternatives) sera un outil
         indispensable, ne serait-ce que pour montrer tes projets aux recruteurs.
         ​</p>
+
+        <p align= "center">
         <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
+        </p>
         <article>
-            <h1>Premiers pas avec GitHub</h1>
+            <h1 id="titre_gauche">Premiers pas avec GitHub</h1>
         </article>
         <p>Suis cette super vidéo pour apprendre à créer un dépôt et à démarrer avec GitHub!</p>
-        <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/BCQHnlnPusY"
+        
+       <p align="center"> <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/BCQHnlnPusY"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
+        </p>
 
 
         <article>
-            <h1>Git en local</h1>
+            <h1 id="titre_gauche">Git en local</h1>
         </article>
         <p>Maintenant que tu connais les bases de ce qu'est git et comment créer un dépôt GitHub, il est temps
             d'apprendre comment nous pouvons utiliser git sur notre machine locale.<br>Contrairement à GitHub, qui est
@@ -149,40 +158,44 @@
             relais selon le flow que tu connais déjà à l'étape de pull request).<br>Mais tout d'abord, apprends à créer
             une branche via Git en regardant cette vidéo (de 0 à 5 minutes 30).
         </p>
+
+        <p align = "center">
         <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/sgzkY5vFKQQ"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
+        </p>
         <article>
             <h1>Maintenant entraine toi!</h1>
         </article>
-        <p> et reviens la semaine prochaine pour plus d'information. Voici quelques liens pour t'entrainer:
-        <ul>
-            <li><a href="https://www.pierre-giraud.com/git-github-apprendre-cours/presentation-git-github/">Presentation
-                    git github</a></li>
-            <li><a
-                    href="https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github?archived-source=1233741">Cours
-                    openclassroom</a></li>
-            <li><a href="http://rogerdudler.github.io/git-guide/index.fr.html">Petit guide</a></li>
-            <li><a href="https://git-scm.com/docs">documentation Git</a></li>
-        </ul>
-        </p>
+        <p> et reviens la semaine prochaine pour plus d'information. Voici quelques liens pour t'entrainer:</p>
+
+
 
     </section>
+    <ul>
+        <li><a href="https://www.pierre-giraud.com/git-github-apprendre-cours/presentation-git-github/">Presentation
+                git github</a></li>
+        <li><a
+                href="https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github?archived-source=1233741">Cours
+                openclassroom</a></li>
+        <li><a href="http://rogerdudler.github.io/git-guide/index.fr.html">Petit guide</a></li>
+        <li><a href="https://git-scm.com/docs">documentation Git</a></li>
+    </ul>
 
     <footer class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class=lien-social>Facebook :<a href="https://www.facebook.com/WildCodeSchool/" target="_blank"
+                <h2 class=lien-social>Facebook :<a href="https://www.facebook.com/WildCodeSchool/" target="_blank"
                         class="btn-social btn-facebook">
-                        <i class="fa fa-facebook"></i></a></h1>
+                        <i class="fa fa-facebook"></i></a></h2>
 
-                <h1 class=lien-social>Paypal :<a
+                <h2 class=lien-social>Paypal :<a
                         href="http://4.bp.blogspot.com/-O4AtSQGggXY/UopQFTT9kpI/AAAAAAAAEn4/DJ6000EjRV4/s1600/SuperTroll-flying-through-clouds-trollface-troll-face.gif"
-                        target="_blank" class="btn-social btn-paypal"><i class="fa fa-paypal"></i></a></h1>
+                        target="_blank" class="btn-social btn-paypal"><i class="fa fa-paypal"></i></a></h2>
 
-                <h1 class=lien-social>Twitter :<a href="https://twitter.com/WildCodeSchool" target="_blank"
-                        class="btn-social btn-twitter"><i class="fa fa-twitter"></i></a></h1>
+                <h2 class=lien-social>Twitter :<a href="https://twitter.com/WildCodeSchool" target="_blank"
+                        class="btn-social btn-twitter"><i class="fa fa-twitter"></i></a></h2>
             </div>
         </div>
     </footer>
