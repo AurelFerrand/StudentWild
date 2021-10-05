@@ -12,46 +12,7 @@ nav>ul {
     grid-column: 1;
     grid-row: 2;
 }
-/****************   NAV BAR ********************/
-/* Add a black background color to the top navigation */
-.topnav {
-    display: flex;
-    background-color: rgb(248, 108, 108);
-    justify-content: flex-end;
-    border-radius: 25px;
-    height: 5rem;
-    border-style: groove;
-  overflow: hidden;
-}
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add an active class to highlight the current page */
-.topnav a.active {
-  color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-}
-
-/************************************************/
 #div_horloge {
     font-size: 2rem;
 }
@@ -92,50 +53,19 @@ nav>ul>li>a {
 
 nav>ul>li:hover {
     /*Rotation sur les li de la nav a 180 degres*/
-    -webkit-transform: rotate(25deg);
-    -moz-transform: rotate(25deg);
-    -ms-transform: rotate(25deg);
-    -o-transform: rotate(25deg);
-    transform: rotate(25deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
 }
 
-ul {
-    display: flex;
-    justify-content: center;
-}
-
-ul>li {
-    padding: 0.5rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 25px;
-    border-style: double;
-    border-color: rgb(0, 0, 0);
-    margin-right: 1.5rem;
-    list-style-type: none;
-    
-}
-
-ul>li>a {
-    list-style: none;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 1.5rem;
-}
-
-ul>li:hover {
-    /*Rotation sur les li de la nav a 180 degres*/
-    -webkit-transform: rotate(-5deg);
-    -moz-transform: rotate(-5deg);
-    -ms-transform: rotate(-5deg);
-    -o-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-}
-h1 {
+.titre-p {
     font-family: monospace;
     font-weight: bold;
     text-align: center;
     margin-top: 3rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 p {
@@ -267,7 +197,7 @@ section.grid-html>article:first-child {
     /* Taille de la grid qui de part sa taille prend 2/3 dans la colonne */
 }
 
-#titre_gauche{
+#titre_gauche {
     text-align: center;
     margin-top: initial;
     font-size: 1.5rem;
