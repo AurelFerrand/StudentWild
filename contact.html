@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    
+</head>
+
+<body>
+    <nav>
+        <img src="https://i.ibb.co/8zr7tpg/Sans-titre.png" alt="StudentWild.png" border="0">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a onclick="darkMode()">Dark Mode</a></li>
+        </ul>
+    </nav>
+
+
+    </body>
+    <section class="centerForm">
+     <div class="form">
+        <article>
+        <h1>Formulaire de contact</h1>
+        </article>
+        <form action="">
+          <label for="fname">Nom & prénom</label>
+          <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
+      
+          <label for="sujet">Sujet</label>
+          <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
+      
+          <label for="emailAddress">Email</label>
+          <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+      
+      
+          <label for="subject">Message</label>
+          <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+      
+          <input  onclick="myFunction()" type="submit" value="Envoyer">
+          <p id=button>...</p>    
+          
+          
+        </form>
+      </div>
+    </section>
+
+    <footer class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class=lien-social>Facebook :<a href="https://www.facebook.com/WildCodeSchool/" target="_blank"
+                        class="btn-social btn-facebook">
+                        <i class="fa fa-facebook"></i></a></h2>
+
+                <h2 class=lien-social>Paypal :<a
+                        href="http://4.bp.blogspot.com/-O4AtSQGggXY/UopQFTT9kpI/AAAAAAAAEn4/DJ6000EjRV4/s1600/SuperTroll-flying-through-clouds-trollface-troll-face.gif"
+                        target="_blank" class="btn-social btn-paypal"><i class="fa fa-paypal"></i></a></h2>
+
+                <h2 class=lien-social>Twitter :<a href="https://twitter.com/WildCodeSchool" target="_blank"
+                        class="btn-social btn-twitter"><i class="fa fa-twitter"></i></a></h2>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
