@@ -331,6 +331,44 @@ input[type=submit]:hover {
     display: flex;
     justify-content: center;
 }
+/*-------------- QUISOMMESNOUS -----------------*/
+.slider {
+    width: 520px;
+    height: 300px;
+    overflow: hidden;
+    margin: 100px auto;
+}
+.slides {
+    width: calc(520px * 3);
+    animation: glisse 20s infinite;
+}
+.slide {
+    float: left;
+}
+
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(-0px);
+    }
+    33% {
+        transform: translateX(-520px);
+    }
+    43% {
+        transform: translateX(-520px);
+    }
+    66% {
+        transform: translateX(-1040px);
+    }
+    99% {
+        transform: translateX(-1040px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 
 /*-------------- footer ------------------------*/
 
@@ -410,44 +448,4 @@ pre {
     margin: auto;
     margin-top: 4rem;
     margin-bottom: 4rem;
-}
-
-/* slider */
-
-.slider {
-Width: 500px;
-Height: 300px;
-Overflow: hidden;
-Margin: 150px auto;
-}
-
-.slides {
-Width: calc(500px * 4);
-Animation: glisse 10s infinite;
-
-.slide {
-    float: left;
-} 
-@keyframes glisse {
-    0% {
-    transform: translateX(0);
-    }
-    10% {
-    transform: translateX(0);
-    }
-    33% {
-    transform: translateX(-500px);
-    }
-    43% {
-    transform: translateX(-500px);
-    }
-    66% {
-    transform: translateX(-1000px);
-    }
-    76% {
-    transform: translateX(-1000px);
-    }
-    100% {
-    transform: translateX(0);
-    }
 }
