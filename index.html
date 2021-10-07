@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentWild</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
@@ -28,7 +28,7 @@
     <header>
         <section class="grid-html">
             <article id="horloge">
-        <div id="div_horloge"></div>
+                <div id="div_horloge"></div>
             </article>
         </section>
     </header>
@@ -42,36 +42,29 @@
         de confiance et avoir une motivation. <br> Croire en ses capacités : il faut que vous croyiez un minimum en
         vous, raisonner en étapes peut vous y aider.</p>
     <HR>
-    <section class="products" >
+    <section class="products">
         <!--Section et class "Products" qui englobe toutes les grids-->
 
         <article class="onClick" goto="js.html">
-            <h1></h1>
         </article>
 
         <article class="onClick" goto="git.html">
-            <h1></h1>
         </article>
 
         <article class="onClick" goto="linux.html">
-            <h1></h1>
         </article>
 
-        <article  >
+        <article>
             <!--onClick est la class pour l'apelle JavaScript ==> redirection des futurs Pages-->
-            <h1></h1>
         </article>
 
         <article class="onClick" goto="htmlcss.html">
-            <h1></h1>
         </article>
 
         <article class="onClick" goto="https://www.wildcodeschool.com/fr-FR">
-            <h1></h1>
         </article>
 
         <article class="onClick" goto="node.html">
-            <h1></h1>
         </article>
 
         <!--article est une grid-->
@@ -82,7 +75,7 @@
 
 
     <footer>
-    <!-- <footer class="container"> -->
+        <!-- <footer class="container"> -->
         <div class="row">
             <div class="col-md-12">
                 <h2 class=lien-social>Facebook<a href="https://www.facebook.com/WildCodeSchool/" target="_blank"
@@ -99,26 +92,26 @@
         </div>
     </footer>
 
-          <script type="text/javascript">
-            window.onload = function() {
-                horloge('div_horloge');
-            };
+    <script>
+        window.onload = function () {
+            horloge('div_horloge');
+        };
 
-            const horloge = (el) => {
-                if (typeof el == "string") {
-                    el = document.getElementById(el);
-                }
-                const actualiser = () => {
-                    const date = new Date();
-                    let str = date.getDate();
-
-                    str += `-${date.getMonth() + 1}-${date.getFullYear()}`;
-                    el.innerHTML = `Bonjour à tous et bienvenue sur notre site, nous sommes le : ${str}`;
-                }
-                actualiser();
-                setInterval(actualiser, 1000);
+        const horloge = (el) => {
+            if (typeof el == "string") {
+                el = document.getElementById(el);
             }
-        </script>
+            const actualiser = () => {
+                const date = new Date();
+                let str = date.getDate();
+
+                str += `-${date.getMonth() + 1}-${date.getFullYear()}`;
+                el.innerHTML = `Bonjour à tous et bienvenue sur notre site, nous sommes le : ${str}`;
+            }
+            actualiser();
+            setInterval(actualiser, 1000);
+        }
+    </script>
     <!--Script javaScript pour les redirections des grids "onClick" goto renvoi la direction-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
