@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git/GitHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src= "script.js"></script>
+</head>
+
+<body>
+     
+  <nav>
+    <a href="index.html">
+        <img src="https://i.ibb.co/8zr7tpg/Sans-titre.png" alt="StudentWild.png" border="0" class="logo-student">
+    </a>
+        <ul>
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="contact.html">Contact</a></li>
+            <li class="nav-link"><a href="#" onclick="darkMode()">Dark Mode</a></li>
+        </ul>
+    </nav>
+
+    <!--<div><img src= "https://i.ibb.co/nnkKmGP/imgbin-javascript-logo-html-com1ment-blog-png.png" alt = "logo js" id="logojs"> </div>
+    -->
+    <section class="grid-html">
+        <!--Section et class "Products" qui englobe toutes les grids-->
+        <article>
+            <h1 id="titre_gauche">Git/GitHub</h1>
+        </article>
+        <p>Lorsque tu travailles sur un projet de développement Web, tu travailleras, la plupart du temps, avec d'autres
+            développeurs sur le même projet en même temps.<br><br>
+            Tu devras également suivre les différentes modifications apportées à ton code.
+            Ici, nous allons parler de git, de GitHub et de la façon dont tu peux utiliser ces 2 services
+            pour collaborer et conserver un historique de tes projets.</p>
+            <p >
+                <div class="youtube">
+        <iframe  width="60%" height="315" src="https://www.youtube.com/embed/rP3T0Ee6pLU"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        </div>
+        </p>
+        <article>
+            <h1 id="titre_gauche">Qu'est-ce que la gestion des versions?</h1>
+        </article>
+        <p>GIT est un logiciel de gestion de version décentralisé. Il a été développé par Linus Torvalds et Junio Hamano
+            en 2005, et a été spécialement créé et optimisé pour Linux. Ce logiciel est proposé gratuitement avec une
+            version Community et une version Entreprise qui est payante. Ce logiciel est sous licence publique générale,
+            ce qui lui permet d’être toujours à jour.<br><br>
+            On parle de gestion décentralisée et de logiciel distribué, car chaque développeur dispose d’une version
+            locale du code source. Il permet de suivre l’historique des modifications (comme tout bon gestionnaire de
+            version). Le principal intérêt pour les développeurs est de pouvoir revenir à une version antérieure en cas
+            d’erreur ou de perte d’une partie du code source, mais aussi de pouvoir optimiser la gestion de projet et de
+            limiter les erreurs dès lors que plusieurs personnes travaillent sur le même code source.</p>
+        <div class="youtube">
+        <iframe  width="60%" height="315" src="https://www.youtube.com/embed/9GKpbI1siow"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <article>
+            <h1 id="titre_gauche">Qu'est-ce que GitHub?</h1>
+        </article>
+        <p>GitHub est une plateforme en ligne très populaire offrant de nombreux services aux développeurs.<br>
+            Ses principales fonctionnalités sont:
+        
+            L'<bold>hébergement</bold> de code
+            Le travail collaboratif entre les membres d'une équipe
+            La découverte de nouveaux projets (souvent open-source) et collaboration entre développeurs du monde
+                entier.
+        
+        GitHub n'est pas unique - il a des concurrents tels que GitLab, Bitbucket, etc. Néanmoins, une chose est sûre:
+        dans un futur proche, avec toi en tant que développeur, GitHub (ou l'une de ses alternatives) sera un outil
+        indispensable, ne serait-ce que pour montrer tes projets aux recruteurs.
+        ​</p>
+
+            <div class="youtube">
+        <iframe  width="60%" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <article>
+            <h1 id="titre_gauche">Premiers pas avec GitHub</h1>
+        </article>
+        <p>Suis cette super vidéo pour apprendre à créer un dépôt et à démarrer avec GitHub!</p>
+        
+
+           <div class="youtube">
+           <iframe  width="60%" height="315" src="https://www.youtube.com/embed/BCQHnlnPusY"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div> 
+
+
+        <article>
+            <h1 id="titre_gauche">Git en local</h1>
+        </article>
+        <p>Maintenant que tu connais les bases de ce qu'est git et comment créer un dépôt GitHub, il est temps
+            d'apprendre comment nous pouvons utiliser git sur notre machine locale.<br>Contrairement à GitHub, qui est
+            un site Web, Git est un logiciel que tu installes sur ton ordinateur.<br>
+            Puisque tout se passe sur ton ordinateur, nous parlons de Git local.
+            Voici la structure typique d'un dépôt sur ta machine locale selon Git :</p>
+        <img class="img-000" src="https://storage.googleapis.com/quest_editor_uploads/tou4VXpfWeSd2cI4PX2qamKBGMafzrVL.png"
+            alt="illustration de la structure d'un dépot git">
+        <p>Tu as peut-être déjà remarqué que le flux de travail Git (créer / modifier un fichier, valider pour
+            enregistrer la modification) ressemble beaucoup à ce que tu as fait sur GitHub dans la quête
+            précédente.<br>Sauf que GitHub propose une interface utilisateur graphique (GUI en abrégé), tandis que Git
+            s'exécute en ligne de commande (CLI en abréviation anglaise), c'est-à-dire dans ton terminal.<br>Tu vas donc
+            répéter ce que tu as déjà fait sur GitHub, mais cette fois sur ta machine locale!<br>Tout d'abord, installe
+            Git-it. C'est une application graphique qui te permettra d'apprendre les bases de l'utilisation de Git.</p>
+
+        <article>
+            <h1 id="titre_gauche">Installation de Git sur ton ordinateur</h1>
+        </article>
+        <p>L'application Git-it donne la procédure à suivre pour Windows et Mac, mais si tu es sous Linux (par exemple,
+            Ubuntu), tu dois installer Git en tapant la commande suivante dans ton terminal : <br> sudo apt install git
+        </p>
+
+        <article>
+            <h1 id="titre_gauche">Branche et flow</h1>
+        </article>
+        <p>Maintenant que tu connais les bases de GitHub et Git, assemble les pièces du puzzle en découvrant le flow
+            pour les utiliser de manière optimale !<br><br>
+        </p>
+        <h2>Pourquoi suivre un flow ?</h2>
+        <p>Un flow (parfois aussi appelé workflow) est une série d'étapes que les membres de l'équipe doivent suivre
+            pour compléter une tâche.
+            Dans notre cas, la tâche consiste à apporter des modifications au code d'un projet web.
+
+            S'entendre sur les étapes à suivre permet à plusieurs personnes de s'organiser. En effet, une telle approche
+            :<br><br>
+            • Minimise le risque de conflits (une notion que tu as déjà vue), car elle empêche plusieurs développeurs de
+            travailler sur le même code en même temps (cela se fait grâce à l'utilisation de branches que nous
+            découvrirons plus tard) ;<br><br>
+            • Facilite le contrôle du code produit par chaque développeur, ce qui assure la qualité du projet (ceci est
+            fait par l'utilisation de pull requests que nous verrons plus tard également).<br><br>
+            Dans cette quête, nous découvrirons progressivement le flow GitHub qui te servira dans tes futurs
+            projets.<br><br>
+            Pour ce faire, tu découvriras d'abord le flow à suivre sur GitHub, uniquement via son interface
+            graphique.<br><br>
+            Ensuite, tu verras comment effectuer certaines des mêmes opérations (création de branches) via Git, sur des
+            lignes de commande sur ta machine.<br><br>
+            Enfin, tu suivras à nouveau le flow de GitHub, mais cette fois en utilisant ce que tu as appris sur Git.</p>
+        <img class="img-000" src="https://cdn.thenewstack.io/media/2018/05/e49988cf-tree-3369950_640.jpg"
+            alt="photo arbre">
+        <article>
+            <h1 id="titre_gauche">Git : la création de branches locales</h1>
+        </article>
+        <p>Tu viens d'apprendre à utiliser l'interface graphique de GitHub.<br>
+            Cette nouvelle branche te permet de modifier un fichier directement dans ton navigateur, puis de le
+            fusionner avec ton code de base pour le partager avec le reste de ton équipe.<br>
+            Mais comme tu le sais déjà, modifier du code en utilisant uniquement l'interface GitHub, c'est-à-dire faire
+            tout dans ton navigateur, n'est pas très pratique : il est plus pratique de travailler localement (= sur ton
+            ordinateur), dans un éditeur de texte, pour enregistrer tes modifications en utilisant Git (rappeles-toi tes
+            amis git add et git commit), et seulement ensuite de les pousser vers ton repo GitHub.<br>
+            Cela tombe bien : il est justement possible de créer une branche locale pour effectuer des commits sur
+            celle-ci, puis de pousser cette branche vers un repo GitHub (l'interface graphique de GitHub prend alors le
+            relais selon le flow que tu connais déjà à l'étape de pull request).<br>Mais tout d'abord, apprends à créer
+            une branche via Git en regardant cette vidéo (de 0 à 5 minutes 30).
+        </p>
+
+            <div class="youtube">
+        <iframe  width="60%" height="315" src="https://www.youtube.com/embed/sgzkY5vFKQQ"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <article>
+            <h1 id="titre_gauche">Maintenant entraine toi!</h1>
+        </article>
+        <p> et reviens la semaine prochaine pour plus d'information. Voici quelques liens pour t'entrainer:</p>
+
+
+
+    </section>
+    <ul>
+        <li><a href="https://www.pierre-giraud.com/git-github-apprendre-cours/presentation-git-github/" target="_blank">Presentation
+                git github</a></li>
+        <li><a
+                href="https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github?archived-source=1233741" target="_blank">Cours
+                openclassroom</a></li>
+        <li><a href="http://rogerdudler.github.io/git-guide/index.fr.html" target="_blank">Petit guide</a></li>
+        <li><a href="https://git-scm.com/docs" target="_blank">documentation Git</a></li>
+    </ul>
+
+    <footer>
+    <!--<footer class="container">-->
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class=lien-social>Facebook :<a href="https://www.facebook.com/WildCodeSchool/" target="_blank"
+                        class="btn-social btn-facebook">
+                        <i class="fa fa-facebook"></i></a></h2>
+
+                <h2 class=lien-social>Paypal :<a
+                        href="http://4.bp.blogspot.com/-O4AtSQGggXY/UopQFTT9kpI/AAAAAAAAEn4/DJ6000EjRV4/s1600/SuperTroll-flying-through-clouds-trollface-troll-face.gif"
+                        target="_blank" class="btn-social btn-paypal"><i class="fa fa-paypal"></i></a></h2>
+
+                <h2 class=lien-social>Twitter :<a href="https://twitter.com/WildCodeSchool" target="_blank"
+                        class="btn-social btn-twitter"><i class="fa fa-twitter"></i></a></h2>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
