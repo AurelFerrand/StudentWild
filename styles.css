@@ -1,6 +1,6 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
-
 /* NAVBAR */
+
 nav {
     display: flex;
     flex-direction: row;
@@ -8,7 +8,6 @@ nav {
     justify-content: space-between;
     border-radius: 25px;
     height: 5rem;
-    border-style: groove;
     border-color: rgb(0, 0, 0);
     border-style: double;
     margin-left: 1px;
@@ -58,52 +57,67 @@ nav>ul {
 }
 
 /* Footer */
+
 footer {
-margin-left: 13px;
-margin-right: 13px;
+    margin-left: 13px;
+    margin-right: 13px;
 }
 
 /*------------------DARKMODE---------------------*/
+
 .dark-mode {
     background-color: black;
-    color: #FFF; 
+    color: #FFF;
 }
-/*------------------HORLOGE---------------------*/            
-#horloge{
+
+/*------------------HORLOGE---------------------*/
+
+#horloge {
     display: flex;
     align-items: center;
 }
+
 #div_horloge {
     margin-top: 0.5rem;
     font-size: 2rem;
 }
+
 #horloge {
-    overflow: hidden; /* important */  
+    overflow: hidden;
+    /* important */
 }
-  #horloge > div {
-    display: inline-block; /* important */
-    white-space: nowrap; /* important */
-    animation: defilement-rtl 15s infinite linear; /* défilement */
+
+#horloge>div {
+    display: inline-block;
+    /* important */
+    white-space: nowrap;
+    /* important */
+    animation: defilement-rtl 15s infinite linear;
+    /* défilement */
     cursor: pointer;
     color: black;
     font-family: monospace;
     padding: 10px 2em 10px 100%;
-  }
-  #horloge:hover > div {
-    animation-play-state: paused; /* met en pause le défilement */
-  }
+}
 
-  @keyframes defilement-rtl {
+#horloge:hover>div {
+    animation-play-state: paused;
+    /* met en pause le défilement */
+}
+
+@keyframes defilement-rtl {
     0% {
-      -webkit-transform: translate(0);
-      transform: translate(0);
+        -webkit-transform: translate(0);
+        transform: translate(0);
     }
     100% {
-      -webkit-transform: translate(-100%);
-      transform: translate(-100%);
+        -webkit-transform: translate(-100%);
+        transform: translate(-100%);
     }
-  }
+}
+
 /*------------------------------------------------*/
+
 img {
     margin-left: 2rem;
     margin-bottom: 0.5rem;
@@ -132,26 +146,20 @@ ol>li {
     }
 }
 
+.youtube {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
 
-
-.youtube { 
-    overflow:hidden; 
-    padding-bottom:56.25%; 
-    position:relative; 
-    height:0;
-    }
-    
-    .youtube iframe {
-    left:0; 
-    top:0; 
-    height:100%;
-    width:100%;
-    position:absolute;
-    }
-
-
-
-
+.youtube iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
 
 ul {
     display: flex;
@@ -175,15 +183,6 @@ ul>li>a {
     color: rgb(0, 0, 0);
     font-size: 1.5rem;
 }
-
-
-/* ul>li:hover {
-    -webkit-transform: rotate(-5deg);
-    -moz-transform: rotate(-5deg);
-    -ms-transform: rotate(-5deg);
-    -o-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-} */
 
 h1 {
     font-family: monospace;
@@ -220,7 +219,7 @@ section.products>article {
     background-repeat: no-repeat;
     background-color: rgb(255, 255, 255);
     filter: drop-shadow(2px 2rem 5px rgba(248, 108, 108, 0.4));
-    transition: all .1s linear; 
+    transition: all .1s linear;
 }
 
 article:hover {
@@ -311,6 +310,7 @@ section.grid-html>article {
     filter: drop-shadow(2px 2rem 5px rgba(184, 181, 181, 0.4));
     margin-bottom: 3rem;
     text-align: center;
+    transition: all .1s linear;
 }
 
 section.grid-html>article:first-child {
@@ -337,13 +337,6 @@ section.grid-html>article:first-child {
     margin: auto;
     max-width: 100%;
     height: auto;
-}
-
-section.grid-js>article:nth-child(0n+0) {
-    grid-column: 1;
-    /*First-Child JavaScript de la grid 1 sur 1 / 3*/
-    grid-row: 2;
-    height: 4rem;
 }
 
 /*----------------Contact -----------------------*/
@@ -398,17 +391,19 @@ input[type=submit]:hover {
 }
 
 /*-------------- QUISOMMESNOUS -----------------*/
-.sliders{
-    display:flex;
-    justify-content: space-around;
 
+.sliders {
+    display: flex;
+    justify-content: space-around;
 }
-.slider{
+
+.slider {
     width: 300px;
     height: 350px;
     overflow: hidden;
 }
-.slides{
+
+.slides {
     width: calc(250px * 4);
     animation: glisse 15s infinite;
 }
@@ -444,22 +439,24 @@ input[type=submit]:hover {
     }
 }
 
-.presentation{
+.presentation {
     display: flex;
     justify-content: space-between;
     max-width: 1000px;
 }
-.personne{
+
+.personne {
     display: flex;
     justify-content: space-around;
 }
-h3{
+
+h3 {
     text-align: center;
 }
-.mod-text{
+
+.mod-text {
     font-size: 15px;
 }
-
 
 /*-------------- footer ------------------------*/
 
