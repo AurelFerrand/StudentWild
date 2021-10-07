@@ -1,28 +1,109 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+/* NAVBAR */
 nav {
     display: flex;
+    flex-direction: row;
     background-color: rgb(248, 108, 108);
     justify-content: space-between;
     border-radius: 25px;
     height: 5rem;
     border-style: groove;
+    border-color: rgb(0, 0, 0);
+    border-style: double;
+    margin-left: 1px;
+    margin-right: 1px;
+    align-items: center;
 }
 
 nav>ul {
-    grid-column: 1;
-    grid-row: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
 }
+
+.nav-link:hover {
+    cursor: pointer;
+    background: #f86c6c57;
+    border-color: white;
+}
+
+.nav-link:hover>a {
+    color: white;
+}
+
+.logo-student {
+    margin: 0;
+    margin-left: 20px;
+    width: 150px;
+    flex-shrink: 0;
+}
+
+.nav-link {
+    padding: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    border-style: double;
+    border-color: black;
+    margin-right: rem;
+    list-style-type: none;
+    transition: all .1s ease;
+}
+
+.nav-link>a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.0rem;
+}
+
+/* Footer */
+footer {
+margin-left: 13px;
+margin-right: 13px;
+}
+
 /*------------------DARKMODE---------------------*/
 .dark-mode {
     background-color: black;
-    color: #FFF;
-    
+    color: #FFF; 
 }
-/*------------------DARKMODE---------------------*/            
+/*------------------HORLOGE---------------------*/            
+#horloge{
+    display: flex;
+    align-items: center;
+}
 #div_horloge {
+    margin-top: 0.5rem;
     font-size: 2rem;
 }
+#horloge {
+    overflow: hidden; /* important */  
+}
+  #horloge > div {
+    display: inline-block; /* important */
+    white-space: nowrap; /* important */
+    animation: defilement-rtl 15s infinite linear; /* défilement */
+    cursor: pointer;
+    color: black;
+    font-family: monospace;
+    padding: 10px 2em 10px 100%;
+  }
+  #horloge:hover > div {
+    animation-play-state: paused; /* met en pause le défilement */
+  }
 
+  @keyframes defilement-rtl {
+    0% {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+    }
+    100% {
+      -webkit-transform: translate(-100%);
+      transform: translate(-100%);
+    }
+  }
+/*------------------------------------------------*/
 img {
     margin-left: 2rem;
     margin-bottom: 0.5rem;
@@ -43,43 +124,34 @@ ol>li {
 }
 
 @media only screen and (max-width: 455px) {
-    img {
-        width: 20%;
-        margin-left: 15px;
+    .logo-student {
+        display: none;
+    }
+    nav {
+        justify-content: center;
     }
 }
 
-nav>ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
 
-nav>ul>li {
-    padding: 0.5rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 25px;
-    border-style: double;
-    border-color: rgb(0, 0, 0);
-    margin-right: rem;
-    list-style-type: none;
-}
 
-nav>ul>li>a {
-    list-style: none;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 1.0rem;
-}
+.youtube { 
+    overflow:hidden; 
+    padding-bottom:56.25%; 
+    position:relative; 
+    height:0;
+    }
+    
+    .youtube iframe {
+    left:0; 
+    top:0; 
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
 
-nav>ul>li:hover {
-    /*Rotation sur les li de la nav a 180 degres*/
-    -webkit-transform: rotate(25deg);
-    -moz-transform: rotate(25deg);
-    -ms-transform: rotate(25deg);
-    -o-transform: rotate(25deg);
-    transform: rotate(25deg);
-}
+
+
+
 
 ul {
     display: flex;
@@ -105,14 +177,13 @@ ul>li>a {
 }
 
 
-ul>li:hover {
-    /*Rotation sur les li de la nav a 180 degres*/
+/* ul>li:hover {
     -webkit-transform: rotate(-5deg);
     -moz-transform: rotate(-5deg);
     -ms-transform: rotate(-5deg);
     -o-transform: rotate(-5deg);
     transform: rotate(-5deg);
-}
+} */
 
 h1 {
     font-family: monospace;
@@ -149,6 +220,7 @@ section.products>article {
     background-repeat: no-repeat;
     background-color: rgb(255, 255, 255);
     filter: drop-shadow(2px 2rem 5px rgba(248, 108, 108, 0.4));
+    transition: all .1s linear; 
 }
 
 article:hover {
@@ -257,21 +329,12 @@ section.grid-html>article:first-child {
     color: black;
 }
 
-.container {
-    
-    
-}
-
 .img-000 {
     border-radius: 10rem;
     border-style: double;
     margin-top: 2rem;
     margin-bottom: 4rem;
     margin: auto;
-}
-
-.youtube {
-    justify-content: center;
 }
 
 section.grid-js>article:nth-child(0n+0) {
@@ -331,44 +394,70 @@ input[type=submit]:hover {
     display: flex;
     justify-content: center;
 }
+
 /*-------------- QUISOMMESNOUS -----------------*/
-.slider {
-    width: 520px;
-    height: 300px;
+.sliders{
+    display:flex;
+    justify-content: space-around;
+
+}
+.slider{
+    width: 300px;
+    height: 350px;
     overflow: hidden;
-    margin: 100px auto;
 }
-.slides {
-    width: calc(520px * 3);
-    animation: glisse 20s infinite;
+.slides{
+    width: calc(250px * 4);
+    animation: glisse 15s infinite;
 }
+
 .slide {
     float: left;
 }
 
 @keyframes glisse {
     0% {
-        transform: translateX(0);
+        transform: translateX(-0px);
     }
     10% {
         transform: translateX(-0px);
     }
     33% {
-        transform: translateX(-520px);
+        transform: translateX(-300px);
     }
     43% {
-        transform: translateX(-520px);
+        transform: translateX(-300px);
+    }
+    53% {
+        transform: translateX(-300px);
     }
     66% {
-        transform: translateX(-1040px);
+        transform: translateX(0px);
     }
     99% {
-        transform: translateX(-1040px);
+        transform: translateX(0px);
     }
     100% {
         transform: translateX(0);
     }
 }
+
+.presentation{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+}
+.personne{
+    display: flex;
+    justify-content: space-around;
+}
+h3{
+    text-align: center;
+}
+.mod-text{
+    font-size: 15px;
+}
+
 
 /*-------------- footer ------------------------*/
 
@@ -397,8 +486,8 @@ input[type=submit]:hover {
     margin: 8px 4px;
     text-align: center;
     text-decoration: none;
-    transition: background-color .3s;
-    webkit-transition: background-color .3s;
+    transition: background-color .3s linear;
+    webkit-transition: background-color .3s linear;
     width: 54px;
 }
 

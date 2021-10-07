@@ -13,12 +13,14 @@
 </head>
 
 <body>
-    <nav>
-        <img src="https://i.ibb.co/8zr7tpg/Sans-titre.png" alt="StudentWild.png" border="0">
+  <nav>
+    <a href="index.html">
+        <img src="https://i.ibb.co/8zr7tpg/Sans-titre.png" alt="StudentWild.png" border="0" class="logo-student">
+    </a>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a onclick="darkMode()">Dark Mode</a></li>
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="contact.html">Contact</a></li>
+            <li class="nav-link"><a href="#" onclick="darkMode()">Dark Mode</a></li>
         </ul>
     </nav>
 
@@ -29,7 +31,6 @@
 
         <article>
             <h1 id="titre_gauche">Histoire de JavaScript</h1>
-
         </article>
 
         <p>Le langage a été créé en dix jours en mai 1995 pour
@@ -47,13 +48,13 @@
             pour
             JavaScript. Sun Microsystems et Netscape étaient partenaires, et la machine virtuelle Java de plus en
             plus
-            populaire. Ce changement de nom servait les intérêts des deux sociétés.
+            populaire. Ce changement de nom servait les intérêts des deux sociétés.</p>
             <br><br>
             <img class="img-000"
                 src="https://ninyachristina.files.wordpress.com/2016/03/brendan-braziljs-2012.jpg?w=500&h=216"
                 alt="Brendan Eich">
             <br><br>
-            En décembre 1995, Sun et Netscape annoncent la sortie de JavaScript. En mars 1996, Netscape met en œuvre
+            <p>En décembre 1995, Sun et Netscape annoncent la sortie de JavaScript. En mars 1996, Netscape met en œuvre
             le moteur JavaScript dans son navigateur web Netscape Navigator 2.0. Le succès de ce navigateur contribue à
             l'adoption rapide de JavaScript dans le développement web orienté client. Microsoft réagit alors en
             développant JScript, qu'il inclut ensuite dans Internet Explorer 3.0 en août 1996 pour la sortie de son
@@ -85,13 +86,12 @@
             De mettre à jour les éléments sans que l’internaute ait besoin de recharger la page
             De faire réagir la page web en fonction du comportement de l’utilisateur
             De contrôler les médias, les vidéos, les images
-            Sans le langage JavaScript, une page web reste statique et peu animée (malgré la présence de CSS).
+            Sans le langage JavaScript, une page web reste statique et peu animée (malgré la présence de CSS).</p>
             <br><br>
 
             <img class="img-000"
                 src="https://i0.wp.com/quartierdudigital.fr/wp-content/uploads/2016/06/Sans-titre-1.png"
                 alt="Ilustration du Javascript">
-        </p>
         <br>
         <!--article est une grid-->
         <article>
@@ -137,12 +137,13 @@
                 }
         // On appelle ensuite notre fonction avec 
         saluer('Marc') // Salut Marc</pre>
-        <p align="center">
+        <div class="youtube">
             <iframe  width="560" height="315" src="https://www.youtube.com/embed/pggJ5s6sTpk" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
             </iframe>
+        </div>
         </p>
         <article>
             <h1 id="titre_gauche">Maintenant entraine toi!</h1>
@@ -152,16 +153,16 @@
     </section>
     
         <ul>
-            <li><a href="https://www.w3schools.com/js/js_variables.asp">Les variables</a></li>
-            <li><a href="https://www.w3schools.com/js/js_loop_for.asp">Boucle En Javascript</a></li>
-            <li><a href="https://www.w3schools.com/js/js_functions.asp">Fonction</a></li>
-            <li><a href="https://www.w3schools.com/js/js_classes.asp">Les classes JavaScript</a></li>
+            <li><a href="https://www.w3schools.com/js/js_variables.asp" target="_blank">Les variables</a></li>
+            <li><a href="https://www.w3schools.com/js/js_loop_for.asp" target="_blank">Boucle En Javascript</a></li>
+            <li><a href="https://www.w3schools.com/js/js_functions.asp" target="_blank">Fonction</a></li>
+            <li><a href="https://www.w3schools.com/js/js_classes.asp" target="_blank">Les classes JavaScript</a></li>
         </ul>
     
 
 
-
-    <footer class="container">
+    <footer>
+    <!--<footer class="container">-->
         <div class="row">
             <div class="col-md-12">
                 <h2 class=lien-social>Facebook :<a href="https://www.facebook.com/WildCodeSchool/" target="_blank"

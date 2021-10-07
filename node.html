@@ -13,12 +13,14 @@
 </head>
 
 <body>
-    <nav>
-        <img src="https://i.ibb.co/8zr7tpg/Sans-titre.png" alt="StudentWild.png" border="0">
+  <nav>
+    <a href="index.html">
+        <img src="https://i.ibb.co/8zr7tpg/Sans-titre.png" alt="StudentWild.png" border="0" class="logo-student">
+    </a>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a onclick="darkMode()">Dark Mode</a></li>
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="contact.html">Contact</a></li>
+            <li class="nav-link"><a href="#" onclick="darkMode()">Dark Mode</a></li>
         </ul>
     </nav>
 
@@ -41,12 +43,12 @@
             l’authentification, quelques API Rest sont créées avec Node.js.
         </p>
         <br>
-        <p align="center">
+        <div class="youtube">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/mzX6DX1S7Fc"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
-        </p>
+        </div>
         <br>
         <article>
             <h1 id="titre_gauche">Historique</h1>
@@ -59,11 +61,11 @@
             Haskell, mais, quand le moteur V8 fut diffusé, il commença à s'intéresser à JavaScript. Même si son idée
             d'origine était d'utiliser des entrées et sorties non bloquantes, il en reviendra un peu dans son module
             système car cela provoquait des problèmes de chargement de bibliothèques externes.
-            Node.js est utilisé au cœur du système d'exploitation Palm webOS18.
+            Node.js est utilisé au cœur du système d'exploitation Palm webOS18.</p>
             <br><br>
             <img src="http://nodejsblog.com/wp-content/uploads/2015/05/ryan_dahl.jpg">
         <p>Ryan Dahl, créateur de Node.js.</p>
-        </p>
+
         <article>
             <h1 id="titre_gauche">Caractéristiques de Node.js</h1>
         </article>
@@ -84,26 +86,27 @@
                 applications de bureau et même des applications mobiles, le tout en utilisant Node.js.</li>
             <li><strong>Maintenable</strong> – Node.js est un choix facile pour les développeurs, car le frontend et le backend peuvent
                 être gérés avec JavaScript comme un seul langage.</li>
-        </ol>
+        </ol></p>
         <br>
         <img src="https://kinsta.com/wp-content/uploads/2021/03/nodejs-applications.png" alt="image" width="500"
             height="500" class="center">
-        </p>
+        
         <article>
             <h1 id="titre_gauche">Maintenant entraine toi!</h1>
         </article>
         <p> et reviens la semaine prochaine pour plus d'information. Voici quelques liens pour t'entrainer:
         <ul>
-            <li><a href="https://www.w3schools.com/nodejs/default.asp">Node.js Tutorial</a></li>
-            <li><a href="https://www.w3schools.com/nodejs/nodejs_modules.asp">Node.js Modules</a></li>
-            <li><a href="https://www.w3schools.com/nodejs/nodejs_npm.asp">Node.js NPM</a></li>
-            <li><a href="https://www.w3schools.com/nodejs/nodejs_events.asp">Node.js Events</a></li>
+            <li><a href="https://www.w3schools.com/nodejs/default.asp" target="_blank">Node.js Tutorial</a></li>
+            <li><a href="https://www.w3schools.com/nodejs/nodejs_modules.asp" target="_blank">Node.js Modules</a></li>
+            <li><a href="https://www.w3schools.com/nodejs/nodejs_npm.asp" target="_blank">Node.js NPM</a></li>
+            <li><a href="https://www.w3schools.com/nodejs/nodejs_events.asp" target="_blank">Node.js Events</a></li>
         </ul>
         </p>
 
     </section>
 
-    <footer class="container">
+    <footer>
+    <!--<footer class="container">-->
         <div class="row">
             <div class="col-md-12">
                 <h2 class=lien-social>Facebook :<a href="https://www.facebook.com/WildCodeSchool/" target="_blank"
