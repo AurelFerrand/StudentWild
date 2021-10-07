@@ -13,19 +13,21 @@
 </head>
 
 <body>
-    <nav>
-        <img src="https://i.ibb.co/8zr7tpg/Sans-titre.png" alt="StudentWild.png" border="0">
+  <nav>
+    <a href="index.html">
+        <img src="https://i.ibb.co/8zr7tpg/Sans-titre.png" alt="StudentWild.png" border="0" class="logo-student">
+    </a>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a onclick="darkMode()">Dark Mode</a></li>
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="contact.html">Contact</a></li>
+            <li class="nav-link"><a href="#" onclick="darkMode()">Dark Mode</a></li>
         </ul>
     </nav>
 
     <section class="grid-html">
 
         <article>
-            <h1 id="titre_gauche">Linux : qu'est-ce que c'est?</h1>
+            <h1 id="titre_gauche">Linux : quèsaco?</h1>
         </article>
 
         <p>Linux® est un système d'exploitation Open Source créé en 1991 par Linus Torvalds. Un système d'exploitation
@@ -36,11 +38,13 @@
             véhicule. Celui-ci peut tourner de façon autonome, mais on obtient un véhicule pleinement fonctionnel
             uniquement lorsqu'on l'associe à un système de transmission, des essieux et des roues. Et si le moteur ne
             fonctionne pas correctement, le reste du véhicule ne fonctionne pas non plus.</p>
-
-        <p align="center"> <iframe width="560" height="315" src="https://www.youtube.com/embed/xLhCOFWaY_M"
+            
+            <div class="youtube">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xLhCOFWaY_M"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe> </p>
+        </div>
 
         <article>
 
@@ -96,13 +100,14 @@
     </section>
 
     <ul>
-        <li align="center"><a href="https://linuxjourney.com/">Linux - se familiariser par la pratique</a></li>
+        <li align="center"><a href="https://linuxjourney.com/" target="_blank">Linux - se familiariser par la pratique</a></li>
         <li align="center"><a
-                href="https://linuxfr.org/news/terminus-un-jeu-d-aventure-pour-apprendre-a-utiliser-la-ligne-de-commande">Terminus
+                href="https://linuxfr.org/news/terminus-un-jeu-d-aventure-pour-apprendre-a-utiliser-la-ligne-de-commande" target="_blank">Terminus
                 : un jeu d'aventure</a></li>
     </ul>
 
-    <footer class="container">
+    <footer>
+    <!--<footer class="container">-->
         <div class="row">
             <div class="col-md-12">
                 <h2 class=lien-social>Facebook :<a href="https://www.facebook.com/WildCodeSchool/" target="_blank"

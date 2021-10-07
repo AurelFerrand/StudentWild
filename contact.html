@@ -14,17 +14,93 @@
 </head>
 
 <body>
-    <nav>
-        <img src="https://i.ibb.co/8zr7tpg/Sans-titre.png" alt="StudentWild.png" border="0">
+      <nav>
+        <a href="index.html">
+            <img src="https://i.ibb.co/8zr7tpg/Sans-titre.png" alt="StudentWild.png" border="0" class="logo-student">
+        </a>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a onclick="darkMode()">Dark Mode</a></li>
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="contact.html">Contact</a></li>
+            <li class="nav-link"><a href="#" onclick="darkMode()">Dark Mode</a></li>
         </ul>
     </nav>
 
+    <section class="grid-html">
+        <!--Section et class "Products" qui englobe toutes les grids-->
+        <article>
+            <h1 id="titre_gauche">Qui sommes nous?</h1>
+        </article>
+        <div class="sliders">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img
+                            src="https://media.discordapp.net/attachments/892025771672109066/895669428165959780/Nicolas.jpg"
+                            alt="" /></div>
+                    <div class="slide"><img
+                            src="https://media.discordapp.net/attachments/892025771672109066/895670994612650004/Nicolas2.jpg"
+                            alt="" /></div>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img
+                            src="https://media.discordapp.net/attachments/892025771672109066/895669426320474142/Esteban.jpg"
+                            alt="" /></div>
+                    <div class="slide"><img
+                            src="https://media.discordapp.net/attachments/892025771672109066/895670993064951808/Esteban2.jpg"
+                            alt="" /></div>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img
+                            src="https://media.discordapp.net/attachments/892025771672109066/895669430128894022/Yosr.jpg"
+                            alt="" /></div>
+                    <div class="slide"><img
+                            src="https://media.discordapp.net/attachments/892025771672109066/895670997187985408/Yosr2.jpg"
+                            alt="" /></div>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img
+                            src="https://media.discordapp.net/attachments/892025771672109066/895669423145369722/Aurelien.jpg"
+                            alt="" /></div>
+                    <div class="slide"><img
+                            src="https://media.discordapp.net/attachments/892025771672109066/895670990523232306/Aurelien2.jpg"
+                            alt="" /></div>
+                </div>
+            </div>
+        </div class="presentation">
+            <div class = personne>
+                <div class ="personne1">
+                    <h3>Bas Nicolas</h3>
+                    <p class= "mod-text"><strong>adresse:</strong> Wattrelos</p>
+                    <p class= "mod-text"><strong>numero de Tel:</strong> 08.25.19.37.59</p>
+                    <p class= "mod-text"><strong>email:</strong>nicolas.bas@wildcode.com</p>
+                </div>
+                <div class ="personne2">
+                    <h3>Huet Esteban</h3>
+                    <p class= "mod-text"><strong>adresse:</strong> Chateauroux</p>
+                    <p class= "mod-text"><strong>numero de Tel:</strong> 08.65.24.97.33</p>
+                    <p class= "mod-text"><strong>email:</strong>esteban.huet@wildcode.com</p>
+                </div>
+                <div class ="personne3">
+                    <h3>Taieb Yosr</h3>
+                    <p class= "mod-text"><strong>adresse:</strong>Bruxelles</p>
+                    <p class= "mod-text"><strong>numero de Tel:</strong> 08.05.14.77.34</p>
+                    <p class= "mod-text"><strong>email:</strong>yosr.taieb@wildcode.com</p>
+                </div>
+                <div class ="personne4">
+                    <h3>Ferrand Aurelien</h3>
+                    <p class= "mod-text"><strong>adresse:</strong> Montpellier</p>
+                    <p class= "mod-text"><strong>numero de Tel:</strong> 08.37.66.52.18</p>
+                    <p class= "mod-text"><strong>email:</strong>aurelien.ferrand@wildcode.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </body>
     <section class="centerForm">
      <div class="form">
         <article>
@@ -52,7 +128,8 @@
       </div>
     </section>
 
-    <footer class="container">
+    <footer>
+    <!--<footer class="container">-->
         <div class="row">
             <div class="col-md-12">
                 <h2 class=lien-social>Facebook :<a href="https://www.facebook.com/WildCodeSchool/" target="_blank"
