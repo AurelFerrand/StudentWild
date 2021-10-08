@@ -116,19 +116,11 @@ footer {
 
 /*------------------------------------------------*/
 
-img {
-    margin-left: 2rem;
-    margin-bottom: 0.5rem;
-}
+
 
 /* center img */
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
+
 
 ol>li {
     font-family: monospace;
@@ -321,11 +313,12 @@ section.grid-html>article {
 }
 
 .img-000 {
-    border-radius: 10rem;
+    border-radius: 15px;
     border-style: double;
     margin-top: 2rem;
     margin-bottom: 4rem;
     max-width: 80%;
+    text-align: center;
 }
 
 /*----------------Contact -----------------------*/
